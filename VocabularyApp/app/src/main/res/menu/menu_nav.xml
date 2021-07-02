@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group xmlns:android="http://schemas.android.com/apk/res/android"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_configuration"
+            android:checked="true"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="@string/nav_configuration" />
+    </group>
+</menu>

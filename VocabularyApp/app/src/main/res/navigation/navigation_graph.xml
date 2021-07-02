@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.vocabularyapp.fragments.walkthrough.viewpager.ViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_configurationFragment"
+            app:destination="@id/navigation_configuration"
+            app:popUpTo="@id/navigation_configuration"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.vocabularyapp.fragments.walkthrough.screens.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment2"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.vocabularyapp.fragments.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_words"
+        android:name="com.example.vocabularyapp.words.WordsFragment"
+        android:label="@string/words"
+        tools:layout="@layout/fragment_words">
+        <action
+            android:id="@+id/action_navigation_words_to_navigation_addWordFragment"
+            app:destination="@id/navigation_addWordFragment" />
+        <action
+            android:id="@+id/action_navigation_words_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_study"
+        android:name="com.example.vocabularyapp.fragments.study.StudyFragment"
+        android:label="@string/study"
+        tools:layout="@layout/fragment_study">
+        <action
+            android:id="@+id/action_navigation_study_to_pickTheCorrectWordFragment"
+            app:destination="@id/navigation_pickTheCorrectWordFragment"
+            app:popUpTo="@id/navigation_pickTheCorrectWordFragment" />
+        <action
+            android:id="@+id/action_navigation_study_to_inputTheCorrectWordFragment"
+            app:destination="@id/inputTheCorrectWordFragment" />
+        <action
+            android:id="@+id/action_navigation_study_to_anagramFragment"
+            app:destination="@id/anagramFragment" />
+        <action
+            android:id="@+id/action_navigation_study_to_answerBasedOnDescriptionFragment"
+            app:destination="@id/answerBasedOnDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_addWordFragment"
+        android:name="com.example.vocabularyapp.fragments.add.AddWordFragment"
+        android:label="@string/addWord"
+        tools:layout="@layout/fragment_add_word">
+        <argument
+            android:name="message"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_addWordFragment_to_navigation_words"
+            app:destination="@id/navigation_words" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_configuration"
+        android:name="com.example.vocabularyapp.fragments.configuration.ConfigurationFragment"
+        android:label="Configuration"
+        tools:layout="@layout/fragment_configuration">
+        <argument
+            android:name="meesage"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navigation_configuration_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_pickTheCorrectWordFragment"
+        android:name="com.example.vocabularyapp.fragments.study.fragments.PickTheCorrectWordFragment"
+        android:label="Pick the correct word"
+        tools:layout="@layout/fragment_pick_the_correct_word" />
+    <fragment
+        android:id="@+id/inputTheCorrectWordFragment"
+        android:name="com.example.vocabularyapp.fragments.study.fragments.InputTheCorrectWordFragment"
+        android:label="Input the correct word"
+        tools:layout="@layout/fragment_input_the_correct_word" />
+    <fragment
+        android:id="@+id/anagramFragment"
+        android:name="com.example.vocabularyapp.fragments.study.fragments.AnagramFragment"
+        android:label="Anagram"
+        tools:layout="@layout/fragment_anagram" />
+    <fragment
+        android:id="@+id/answerBasedOnDescriptionFragment"
+        android:name="com.example.vocabularyapp.fragments.study.fragments.AnswerBasedOnDescriptionFragment"
+        android:label="Guess word"
+        tools:layout="@layout/fragment_answer_based_on_description" />
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.vocabularyapp.fragments.update.UpdateFragment"
+        android:label="Update word"
+        tools:layout="@layout/fragment_update">
+        <action
+            android:id="@+id/action_updateFragment_to_navigation_words"
+            app:destination="@id/navigation_words" />
+        <argument
+            android:name="currentWord"
+            app:argType="com.example.vocabularyapp.model.Word" />
+    </fragment>
+
+
+</navigation>

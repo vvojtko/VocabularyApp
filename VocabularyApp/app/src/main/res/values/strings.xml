@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">VocabularyApp</string>
+    <string name="study">Study</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_login">nav_login</string>
+    <string name="nav_support">nav_support</string>
+    <string name="nav_help">nav_help</string>
+    <string name="nav_feedback">nav_feedback</string>
+    <string name="nav_open_drawer">open navigation drawer</string>
+    <string name="nav_close_drawer">close navigation drawer</string>
+    <string name="description">first screen description</string>
+    <string name="next_btn">Next</string>
+    <string name="second_title">second title</string>
+    <string name="second_desc">second description</string>
+    <string name="third_title">third title</string>
+    <string name="third_desc">third description</string>
+    <string name="finish">Finish</string>
+    <string name="words">Words</string>
+
+    <string name="action_view_words">com.example.action.VIEW_WORDS</string>
+    <string name="words_list">Words list</string>
+    <string name="addWord">Add the word</string>
+    <string name="default_word">word clone</string>
+    <string name="delete_word_button">Delete word button</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="nav_configuration">Configuration</string>
+    <string name="splash">splashImageView</string>
+    <string name="welcome">Welcome</string>
+    <string name="home_picture_image">Image of logo app</string>
+    <string name="home_page_description">Welcome! The goal of using the app is to constantly improve your vocabulary in languages chosen by you.</string>
+    <string name="home_page_study_description">In study section you can play four different games that allows you to improve your vocabulary. To change the main language just go to study section and choose
+        the language by clicking on one of the languages on the bottom of the screen. </string>
+    <string name="home_page_study_pickWord_description">In <b>Pick the correct word</b> you have to pick the correct meaning of word that is appearing in the center of your screen.</string>
+
+    <string name="home_page_study_guessWord_description">In <b>Guess word</b> you have to input the word based on its description that is appearing
+        in the center of the screen</string>
+
+    <string name="home_page_study_anagram_description">In <b>Anagram</b> you have to guess which word is hiding behind the generated anagram word</string>
+
+    <string name="home_page_study_inputWord_description">In <b>Input the word</b> you have to input the word translation.</string>
+</resources>

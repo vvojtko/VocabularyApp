@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VocabularyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button_color</item>=
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/floating_button_color</item>
+
+        <item name="android:navigationBarColor" tools:targetApi="l" >@color/colorPrimaryDark</item>
+        <item name="toolbarStyle">@style/ToolbarTheme</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyTextAppearance" parent="TextAppearance.MaterialComponents.Body1"/>
+</resources>
